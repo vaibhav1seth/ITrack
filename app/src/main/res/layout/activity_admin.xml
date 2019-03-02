@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:id="@+id/title"
+            android:layout_below="@+id/toolbar"
+            android:background="@drawable/logo"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/school"
+            android:layout_below="@id/title"
+            android:id="@+id/cllg"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:text="College Details"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="50dp"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/funding"
+            android:layout_below="@id/cllg"
+            android:layout_marginTop="20dp"
+            android:id="@+id/funds"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cllg"
+            android:text="Fund Details"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="55dp"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/staff_manage"
+            android:layout_below="@id/funds"
+            android:id="@+id/staff"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/funds"
+            android:text="Staff Details"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="55dp"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/registration"
+            android:layout_below="@id/staff"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/staff"
+            android:textStyle="bold"
+            android:text="College Reg. Details"
+            android:textSize="28sp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="55dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

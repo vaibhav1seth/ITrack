@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/report"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="280dp"
+        android:id="@+id/usn"
+        android:drawableLeft="@drawable/ic_pan"
+        app:met_floatingLabel="highlight"
+        android:hint="   Enter the usn"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="280dp"
+        android:layout_centerHorizontal="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="280dp"
+        android:id="@+id/dobstudent"
+        android:drawableLeft="@drawable/ic_dob"
+        app:met_floatingLabel="highlight"
+        android:hint="   Enter the dob"
+        android:inputType="date"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usn"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="280dp"
+        android:id="@+id/phonestu"
+        android:drawableLeft="@drawable/ic_phone"
+        app:met_floatingLabel="highlight"
+        android:hint="   Enter the RMN"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dobstudent"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:textSize="23sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phonestu"
+        android:id="@+id/sub_stduent"
+        android:layout_marginTop="19dp"
+        android:text="SUBMIT"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

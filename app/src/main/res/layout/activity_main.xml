@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ITrack DashBoard"
+            android:textSize="30sp"
+            android:textColor="#ffff"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/toolbar"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_height="150dp"
+            android:id="@+id/admin"
+            android:layout_below="@+id/toolbar"
+            android:background="@drawable/admin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADMIN"
+            android:textStyle="bold"
+            android:textColor="#ffff"
+            android:textSize="24sp"
+            android:layout_below="@+id/admin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/teachers"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/admin"
+            android:layout_marginTop="50dp"
+            android:id="@+id/teacher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FACULTY"
+            android:textSize="24sp"
+            android:layout_below="@id/teacher"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="#ffff"/>
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/sislogo"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/teacher"
+            android:layout_marginTop="50dp"
+            android:id="@+id/student" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Information Report"
+            android:textSize="24sp"
+            android:layout_below="@id/student"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="#ffff"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

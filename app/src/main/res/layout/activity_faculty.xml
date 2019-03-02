@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacultyActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/teachers" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="280dp"
+            android:id="@+id/emailid"
+            android:drawableLeft="@drawable/ic_email"
+            app:met_floatingLabel="highlight"
+            android:hint="   Enter the email id"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="250dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailid"
+            android:id="@+id/sub_faculty"
+            android:layout_marginTop="15dp"
+            android:text="SUBMIT"
+            android:textStyle="bold"/>
+        <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mid"
+            android:layout_below="@+id/sub_faculty"/>
+            -->
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:textSize="23sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center_horizontal"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
